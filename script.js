@@ -1,4 +1,4 @@
-console.log("This is the script.js file")
+console.log("script.js is running")
 
 
 fetch("http://localhost:3000/pizza")
