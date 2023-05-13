@@ -1,0 +1,35 @@
+{
+  "Pizza": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "toppings": ["Tomatoes", "Mozzarella", "Basil"],
+      "recipes": "Combine pizza dough, tomato sauce, mozzarella cheese, and fresh basil leaves to make a simple, yet delicios Margherita pizza."
+      
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "toppings": ["Pepperoni", "Mozzarella", "Tomato sauce"],
+      "recipes": "Spread tomato sauce on pizza dough, top with pepperoni slices and mozzarella cheese, then bake until golden and bubbly to make a simple Pepperoni pizza."
+    },
+    {
+      "id": 3,
+      "name": "Hawaiian",
+      "toppings": ["Ham", "Pineapple", "Mozzarella"],
+      "recipes": "Spread tomato sauce on pizza dough, top with ham, pineapple chunks, and mozzarella cheese, then bake until golden and melty to make a simple Hawaiian pizza."
+    },
+    {
+      "id": 4,
+      "name": "Veggie Pizza",
+      "toppings": ["Bell peppers", "Mushrooms", "Onions", "Olives"],
+      "recipes": "Spread tomato sauce on pizza dough, top with a variety of fresh vegetables such as bell peppers, onions, mushrooms, and olives, along with mozzarella cheese, then bake until the crust is crispy and the cheese is melted for a simple Veggie pizza."
+    },
+    {
+      "id": 5,
+      "name": "Chicken",
+      "toppings": ["Chicken", "Red onions", "Mozzarella"],
+      "recipes": "Spread tomato sauce on pizza dough, top with cooked chicken, red onions, bell peppers, and mozzarella cheese, then bake until the crust is golden and the cheese is melted for a simple Chicken pizza."
+    }
+  ]
+}
