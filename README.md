@@ -10,8 +10,9 @@ To run locally, please follow these steps:
 
 2. Install the required dependencies by running the following command:
 
-npm install -g json-server
-json-server --watch db.json
+# npm install -g json-server
+
+# json-server --watch db.json
 
 3. Then open the index.html in your web browser to access the website.
 
