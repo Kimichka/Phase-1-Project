@@ -51,25 +51,29 @@ fetch("http://localhost:3000/Pizza")
     //});
   //})
   const tableRows = document.querySelectorAll("tbody tr");
-  const detailsContainer = document.getElementById("pizza-details");
+    const detailsContainer = document.getElementById("pizza-details");
 
-  tableRows.forEach(row => {
-    row.addEventListener("click", () => {
-      const pizzaId = parseInt(row.cells[0].getAttribute("data-pizza-id"));
-      const pizza = data.find(pizza => pizza.id === pizzaId);
+    tableRows.forEach(row => {
+      row.addEventListener("click", () => {
+        console.log(row.dataset); // Log the dataset object to verify attribute access
 
-      if (pizza) {
-        const pizzaDetails = document.createElement("div");
-        pizzaDetails.innerHTML = `
-          <h2>${pizza.name}</h2>
-          <p><strong>Toppings:</strong> ${pizza.toppings.join(", ")}</p>
-          <p><strong>Recipe:</strong> ${pizza.recipe}</p>
-        `;
-        detailsContainer.appendChild(pizzaDetails);
-      }
+        const pizzaId = parseInt(row.cells[0].getAttribute("data-pizza-id"));
+        console.log("Clicked pizzaId:", pizzaId); // Log the clicked pizzaId
+        const pizza = data.find(pizza => pizza.id === pizzaId);
+        console.log("Selected pizza:", pizza); // Log the selected pizza object
+
+        if (pizza) {
+          const pizzaDetails = document.createElement("div");
+          pizzaDetails.innerHTML = `
+            <h2>${pizza.name}</h2>
+            <p><strong>Toppings:</strong> ${pizza.toppings.join(", ")}</p>
+            <p><strong>Recipe:</strong> ${pizza.recipes}</p>
+          `;
+          detailsContainer.appendChild(pizzaDetails);
+        }
+      });
     });
+  })
+  .catch(error => {
+    console.error("Error fetching JSON data:", error);
   });
-})
-.catch(error => {
-  console.error("Error fetching JSON data:", error);
-});
