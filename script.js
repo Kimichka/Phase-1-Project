@@ -15,7 +15,6 @@ fetch("http://localhost:3000/Pizza")
     row.addEventListener("click", () => {
       const pizzaId = parseInt(row.cells[0].getAttribute("data-pizza-id"));
       const pizza = data.find(pizza => pizza.id === pizzaId);
-
       if (pizza) {
         const pizzaDetails = document.createElement("div");
         pizzaDetails.innerHTML = `
