@@ -65,11 +65,16 @@ fetch("http://localhost:3000/Pizza")
           <p><strong>Toppings:</strong> ${pizza.toppings.join(", ")}</p>
           <p><strong>Recipe:</strong> ${pizza.recipe}</p>
         `;
-        detailsContainer.appendChild(pizzaDetails);
-      }
+        
+
+        detailsContainer.innerHTML = "";
+
+          // Append new details
+          detailsContainer.appendChild(pizzaDetails);
+        } else {
+          detailsContainer.innerHTML = "";
+        }
+      });
     });
-  });
-})
-.catch(error => {
-  console.error("Error fetching JSON data:", error);
-});
+  })
+  
