@@ -20,4 +20,3 @@ for (let i = 0; i < cells.length; i++) {
 //cells.forEach(function(cell) {
 //    cell.addEventListener("click", function() {
 //        console.log("Cell clicked: " + cell.innerHTML);
-
