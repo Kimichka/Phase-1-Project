@@ -1,7 +1,7 @@
 let cells = document.getElementsByTagName("td");
 for (let i = 0; i < cells.length; i++) {
   cells[i].addEventListener("mouseover", function() {
-    this.style.backgroundColor = "red";});
+    this.style.backgroundColor = "#990257";});
   cells[i].addEventListener("mouseout", function() {
     this.style.backgroundColor = "";});}
 
