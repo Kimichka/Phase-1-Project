@@ -26,4 +26,3 @@ fetch("http://localhost:3000/Pizza")
           detailsContainer.appendChild(pizzaDetails);
         } else {
           detailsContainer.innerHTML = "";}});});})
-  
