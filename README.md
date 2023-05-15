@@ -16,6 +16,10 @@ To run locally, please follow these steps:
 
 3. Then open the index.html in your web browser to access the website.
 
+### Description:
+
+The website shows recipes for five different pizzas. You can click on it and see the information.
+
 ### Credit:
 
 Stable Diffusion Design Inspiration: https://stablediffusionweb.com/#demo
